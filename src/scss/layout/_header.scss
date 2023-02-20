@@ -1,0 +1,83 @@
+.site-header {
+    position: fixed;
+    height: 130px;
+    width: 100%;
+    padding: 0 var(--gap-m);
+    z-index: 999;
+
+    &__inner { 
+        padding-top: var(--gap-m); 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu-button {
+    height: 30px;
+    width: 30px;
+    position: relative; // Gör att ingenting hoppar utamför
+
+    //Stänga av alla orginalinställningar hos button
+    background: none;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    //
+
+    &:focus, &--close {
+        .menu-button__hamburger {
+
+            transition: transform 0.2s 0.2s;
+            transform: rotate(45deg) translate(-50%, -50%);
+
+            &:before {
+                transition: top 0.2s, transform 0.2s 0.2s;
+                transform: rotate(90deg);
+                top: 0;
+            }
+
+            &:after{
+                transition: width 0.2s;
+                width: 0;
+            }
+        }
+    }
+
+
+    &__hamburger {
+        
+        transform-origin: left top;
+        position: absolute;
+        height: 1px;
+        width: 100%; // (30px)
+        top: 50%;
+        left: 50%;
+        transition: transform 0.2s;
+        transform: translate(-50%, 50%) rotate(0);
+        background-color: var(--color-light-200);
+
+        &:before, &:after {
+            content: '';
+            display: block; 
+            position: absolute;
+            top: -10px;
+            height: 1px;
+            width: 100%;
+            background-color: var(--color-light-200);
+            
+        }
+
+        &:before {
+            transition: top 0.2s 0.2s, transform 0.2s;
+        }
+
+        &:after {
+            top: 10px;
+            width: 100%;
+            transition: width 0.2s 0.2s;
+            
+            
+        }
+    }
+}
