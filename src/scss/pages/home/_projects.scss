@@ -1,0 +1,97 @@
+.project {
+    background-color: var(--color-dark);
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    padding: var(--section-gap) 0;
+
+    
+    // &__background {
+    // display: block;
+    // background-size: fill;
+    // background-position: center;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 80);
+    // }
+
+        &__inner {
+        grid-column: inner;
+        }
+    
+        &__text {
+        max-width: 1000px;
+        margin-top: 4rem;
+        margin-bottom: 100px;
+
+        p {
+            width: 600px;
+        }
+        }
+    
+        &__title {
+        font-size: var(--font-size-4);
+        margin: 0;
+        color: var(--color-light-200);
+        font-weight: bold;
+        opacity: 0.6;
+        }
+}
+
+
+
+
+.swiper {
+    height: 500px;
+    width: 100%;
+    
+}
+
+
+.swiper-slide {
+    display: flex;
+    font-size: 3rem;
+    width: 800px;
+    
+
+    &:not(.swiper-slide-active) {
+        opacity: 0.5;
+    }
+}
+
+.swiper-slide-active {
+    .slide-2__content {
+        opacity: 1;
+    }
+}
+
+.slide-2 {
+
+    &__content {
+        opacity: 0.5;
+        transition: opacity 0.5s 1.5s;
+        width: 100%;
+    }
+}
+
+.swiper-button-prev {
+    color: var(--color-light-200);
+    opacity: 0.6;
+    left: 25%;
+}
+
+.swiper-button-next {
+    color: var(--color-light-200);
+    opacity: 0.6;
+    right: 25%;
+}
+    
+.swiper-pagination-bullet {
+    background: var(--color-light-200);
+    opacity: 0.2;
+}
+    
+.swiper-pagination-bullet-active {
+    gap: var(--gap-m);
+    background: var(--color-light);
+    opacity: 0.70;
+}
+
+

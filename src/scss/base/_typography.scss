@@ -1,26 +1,29 @@
 body {
-    font-family: var(--font-sans);
+    
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+h3, h4, h5, h6 {
+    font-family: var(--font-sans);
 }
 
 
 h1 {
-    
+    font-family: var(--font-sans-title);
 }
 
 h2 {
-
+    font-family: var(--font-sans-title);
+    color: var(--color-light-200);
+    opacity: 0.60; //TEMP
 }
 
 h3 {
-
+    color: var(--color-light-200);
+    opacity: 0.60; //TEMP
 }
 
 h4 {
-
+    
 }
 
 h5 {
@@ -32,13 +35,17 @@ h6 {
 }
 
 p {
-    line-height: var(--line-heigt);
+    font-family: var(--font-sans);
+    line-height: 1.8;
+    font-size: var(--font-size-2);
+    color: var(--color-light-200);
+    opacity: 0.70;
 }
 
 a {
     color: var(--color-dark);
     text-decoration: none;
-    line-height: var(--line-heigt);
+    line-height: var(--line-height);
 
     &:hover {
         color: var(--color-accent);
@@ -46,5 +53,25 @@ a {
 }
 
 li {
-    line-height: var(--line-heigt);
+    line-height: var(--line-height);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    color: var(--color-accent);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: var(--font-sans);
+    font-size: var(--font-size-2);
+    color: var(--color-light);
+    line-height: 1.8;
+    opacity: 0.70;
 }

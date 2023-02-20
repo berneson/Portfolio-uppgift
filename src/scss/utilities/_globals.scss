@@ -8,40 +8,42 @@
     --gap-m: 2rem;
     --gap-s: 1rem;
 
-    --border-radius: 10px;
+    // --border-radius: 10px;
 
-    --color-dark: #222;
-    --color-dark-200: #444;
-    --color-dark-300: #666;
-    --color-dark-500: #888;
-    --color-dark-600: #999;
-    --color-dark-700: #b5b5b5;
-    --color-dark-800: #d5d5d5;
-    --color-dark-900: #f1f1f1;
+    --color-dark: #111;
+    --color-dark-200: #222;
+    --color-dark-300: #333;
+    --color-dark-500: #444;
+    --color-dark-600: #555;
+    --color-dark-700: #666;
+    --color-dark-800: #777;
+    --color-dark-900: #888;
 
-    --color-accent: #8a6086;
-    --color-accent-200: #8a6086;
-    --color-accent-300: #8a6086;
-    --color-accent-400: #8a6086;
-    --color-accent-500: #8a6086;
-    --color-accent-600: #8a6086;
-    --color-accent-700: #8a6086;
-    --color-accent-800: #8a6086;
-    --color-accent-900: #8a6086;
+    --color-accent: #639181;
+    --color-accent-200: #3e6356;
+    --color-accent-300: #639181;
+    --color-accent-400: #639181;
+    --color-accent-500: #639181;
+    --color-accent-600: #639181;
+    --color-accent-700: #639181;
+    --color-accent-800: #639181;
+    --color-accent-900: #639181;
 
-    --color-light: #f5f3eb;
-    --color-light-200: #f5f3eb;
-    --color-light-300: #f5f3eb;
-    --color-light-400: #f5f3eb;
-    --color-light-500: #f5f3eb;
-    --color-light-600: #f5f3eb;
-    --color-light-700: #f5f3eb;
-    --color-light-800: #f5f3eb;
-    --color-light-900: #f5f3eb;
+    --color-light: #f1f1f1;
+    --color-light-200: #e1e1e1;
+    --color-light-300: #e1e1e1;
+    --color-light-400: #e1e1e1;
+    --color-light-500: #e1e1e1;
+    --color-light-600: #e1e1e1;
+    --color-light-700: #e1e1e1;
+    --color-light-800: #e1e1e1;
+    --color-light-900: #fff;
     
 
-    --font-sans: 'Arial', sans-serif;
-    --font-serif: 'Georiga', serif;
+    --font-sans-title: 'Semplicita', sans-serif;
+    --font-sans: 'Niveau-Grotesk', sans-serif;
+
+    // --font-serif: 'Georiga', serif;
 
     --line-height: 1.5;
 
@@ -54,5 +56,9 @@
     --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
     --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
     --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+
+
+    --page-inner: 90rem;
+    --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--page-inner)) [inner-end] minmax(32px, 1fr) [full-end];
 
 }
