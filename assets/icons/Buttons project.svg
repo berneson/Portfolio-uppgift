@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="12" viewBox="0 0 52 12">
+  <g id="Buttons_project" data-name="Buttons project" transform="translate(-934 -525.292)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(954 525.292)" fill="#fff" stroke="#c3c3c3" stroke-width="1">
+      <circle cx="6" cy="6" r="6" stroke="none"/>
+      <circle cx="6" cy="6" r="5.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(934 527.292)" fill="#fff" stroke="#c3c3c3" stroke-width="1">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(978 527.292)" fill="#fff" stroke="#c3c3c3" stroke-width="1">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3.5" fill="none"/>
+    </g>
+  </g>
+</svg>
