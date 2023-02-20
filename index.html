@@ -4,11 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCSS - BASE</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fzz0umc.css">
+    <title>Portfolio uppgift</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="portfolio.js" defer></script>
 </head>
 <body>
 
+    <div class="container">
+
+        <!-- Header -->
+        <header class="site-header">
+            <div class="site-header__inner">
+
+                <a href="index.html" class="site-header__brandning">
+                    <img src="assets/images/LB logo-hero.svg" alt="Brandning logo LB">
+                </a>
+                <button class="menu-button">
+                    <div class="menu-button__hamburger">
+    
+                    </div>
+                </button>
+            </div>
+
+
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__inner">
+
+                <!-- <div class="hero__main"></div> -->
+
+                <div class="hero__content">
+
+                    <div class="hero__branding">
+                        <h1 class="hero__branding-firstname">LINA</h1>
+                        <h1 class="hero__branding-lastname">BERNESON</h1>
+                        <h2>I’m a <strong>developer</strong> & <strong>designer</strong></h2>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+
+        <!-- Content -->
+        <section class="content">
+            <div class="content__inner">
+
+                <article class="content__column">
+                    
+                    <header class="content__header-1">
+                        <h2 class="content__title">DESIGN</h2>
+                        <div class="content__text">
+                            <p>Design makes a difference, which is why we attach great importance to a well-thought-out and unique design. This makes your company stand out. <strong>We transform ideas into results.</strong> We help you and your brand</p>
+                        </div>
+                    </header>
+
+                    <header class="content__header-2">
+                        <h2 class="content__title">MARKETING</h2>
+                        <div class="content__text">
+                            <p>Marketing is a very important part of the process. It makes your company <strong>stand out to others</strong> and create an impression. And to the most important thing - be remembered!</p>
+                        </div>
+                    </header>
+
+                    <header class="content__header-3">
+                        <h2 class="content__title">DEVELOPMENT</h2>
+                        <div class="content__text">
+                            <p>Help with a website? Then you’ve come to the right place! Everything from simple web pages to complex portals. <strong>We help you regardless of website.</strong> I develop in Javascript, HTML, CSS and Wordpress</p>
+                        </div>
+                    </header>
+
+                    <header class="content__header-4">
+                        <h2 class="content__title">WORDPRESS</h2>
+                        <div class="content__text">
+                            <p>Create fully functional websites, mobile applications and much more. With WordPress, we can use advanced technologies that make this CMS (Content Management System) <strong>work for everything on the web</strong></p>
+                        </div>
+                    </header>
+
+                </article>
+            </div>
+        </section>
+
+
+
+        <!-- Project -->
+        <section class="project">
+
+            <!-- <img class="project__background" src="assets/images/image-background.jpg" alt=""> -->
+            
+            <div class="project__inner">
+                
+                <header class="project__header">
+                    <h2 class="project__title"> < / PROJECT > </h2>
+                    <div class="project__text">
+                        <p>A selection of the projects I created in web <strong>development</strong> and made in web <strong>design</strong> down here. Lorem ipsum dolor sit amet</p>
+                    </div>
+                </header>
+                
+
+                <!-- Slider -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/project2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/project3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/project1.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+
+        <!-- About -->
+        <section class="about">
+            <div class="about__inner">
+
+                <h2 class="about__title"> < / ABOUT > </h2>
+                <article class="about__column">
+
+                    <div class="about__about">
+
+                        <h2 class="about__branding"> <strong>HELLO</strong> I'M LINA!</h2>
+                        <p>I completely redirected, went from beauty to web development and web design. It makes me grow as a person and I get to do something I really like without it feeling like a job, if you know what I mean. My skills are that I have an eye for details and am responsive to each customer. With me, you get the whole package, from idea to finished page. </p>
+                        <h3 class="about__hope">Hope our paths meet!</h3>
+                        
+                        <div class="about__button">
+                            <a href="index.html" class="button">< / CONTACT-ME ></a>
+                        </div>
+                        
+                    </div>
+
+
+                    
+
+
+
+                    <div class="about__educations">
+                        <h2 class="about__branding"> <strong>EDUCATIONS</strong></h2>
+                        <h3 class="about__work">Web design & Web development</h3>
+                        <p class="about__development">Development</p>
+                        <ul>
+                            <li>Front End Development</li>
+                            <li>Back End Development</li>
+                            <li>Visual Studio Code (+ Extensions), Local, Filezilla/Transmit, npm, git</li>
+                        </ul>
+    
+                        <p class="about__design">Design</p>
+                        <ul>
+                            <li>Graphic Design</li>
+                            <li>Adobe Photoshop CC™, Adobe XD CC™, Adobe Illustrator CC™</li>
+                        </ul>
+    
+                    </div>
+                </article>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
 
 </body>
 </html>
