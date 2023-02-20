@@ -1,3 +1,43 @@
 .hero {
-    background-color: black;
+    display: grid;
+    min-height: 100vh;
+    background: #111 url(assets/images/picturelinab@2x.png) no-repeat;
+    background-position: right;
+    grid-template-columns: var(--grid-container);
+    
+    &__inner {
+    grid-column: inner;
+        
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    }
+
+    &__content {
+    max-width: 50rem;
+    width: 100%;
+    margin: 18rem 15rem;
+    }
+
+    &__branding-firstname {
+        font-size: 200px;
+        color: var(--color-light-200);
+        margin: 0;
+        text-align: end;
+    }
+
+    &__branding-lastname {
+        margin: 0;
+        line-height: 0.5;
+        font-weight: 200;
+        font-size: 150px;
+        color: var(--color-light-200);
+    }
+
+    h2 {
+        margin-top: 50px;
+        text-align: end;
+        font-size: 40px;
+        font-weight: 200;
+    }
 }
