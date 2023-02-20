@@ -1,0 +1,76 @@
+@use '../../components/buttons' as button;
+
+.about {
+
+    background-color: var(--color-dark-200);
+    display: grid;
+    grid-template-columns: var(--grid-container);
+     padding: 6rem 0;
+    // padding: var(--section-gap) 0;
+    
+        &__inner {
+        grid-column: inner;
+        
+        }
+
+        &__column {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            width: 100%;
+            margin-top: 4rem;
+
+        }
+
+        &__hope {
+            font-family: var(--font-sans);
+            font-size: var(--font-size-2);
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        &__work {
+            font-family: var(--font-sans);
+            font-size: var(--font-size-2);
+            font-weight: 400;
+        }
+
+        &__title {
+            font-size: var(--font-size-4);
+            
+        }
+
+        &__about {
+            width: 600px;
+        }
+
+        .button {
+
+            margin-top: 3rem;
+            @include button.default;
+        }
+
+        &__educations {
+            // padding: 0 0 0 20px;
+            width: 600px;
+        }
+
+        &__development,
+        &__design {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: inside;
+            font-family: var(--font-sans);
+            font-size: var(--font-size-2);
+            color: var(--color-light);
+            
+            ::marker {
+                color: var(--color-accent-200);
+            }
+        }
+
+}
