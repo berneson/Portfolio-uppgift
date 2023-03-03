@@ -1,3 +1,5 @@
+@use '../../scss/utilities/responsive';
+
 :root {
 
     --section-gap: 8rem;
@@ -12,7 +14,7 @@
 
     --color-dark: #111;
     --color-dark-200: #222;
-    --color-dark-300: #333;
+    --color-dark-300: rgb(32, 32, 32);
     --color-dark-500: #444;
     --color-dark-600: #555;
     --color-dark-700: #666;
@@ -58,7 +60,10 @@
     --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
 
 
-    --page-inner: 90rem;
-    --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--page-inner)) [inner-end] minmax(32px, 1fr) [full-end];
+    --page-inner: 74rem;
+    --grid-container: [full-start] minmax(48px, 1fr) [inner-start] minmax(0, var(--page-inner)) [inner-end] minmax(48px, 1fr) [full-end];
+    @include responsive.max(480px) {
+        --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--page-inner)) [inner-end] minmax(32px, 1fr) [full-end];
+    }
 
 }
