@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="portfolio.js" defer></script>
+    <script src="src/js/portfolio.js" defer></script>
 </head>
 <body>
 
@@ -31,11 +31,24 @@
                 </button>
             </div>
 
-
         </header>
 
+
+        <nav class="site-menu">
+            <div class="site-menu__inner">
+                <ul class="site-menu__list">
+                    <a href="#projects"><li class="site-menu__item">Projects</li></a>
+                    <a href="#content"><li class="site-menu__item">Check this out</li></a>
+                    <a href="#about"><li class="site-menu__item">About / Contact</li></a>
+                    <a href="#hero"><li class="site-menu__item">Branding</li></a>
+                </ul>
+            </div>
+        </nav>
+
+
+
         <!-- Hero -->
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero__inner">
 
                 <!-- <div class="hero__main"></div> -->
@@ -54,34 +67,34 @@
 
 
         <!-- Content -->
-        <section class="content">
+        <section id="content" class="content">
             <div class="content__inner">
 
                 <article class="content__column">
                     
                     <header class="content__header-1">
-                        <h2 class="content__title">DESIGN</h2>
+                        <h3 class="content__title">DESIGN</h3>
                         <div class="content__text">
                             <p>Design makes a difference, which is why we attach great importance to a well-thought-out and unique design. This makes your company stand out. <strong>We transform ideas into results.</strong> We help you and your brand</p>
                         </div>
                     </header>
 
                     <header class="content__header-2">
-                        <h2 class="content__title">MARKETING</h2>
+                        <h3 class="content__title">MARKETING</h3>
                         <div class="content__text">
                             <p>Marketing is a very important part of the process. It makes your company <strong>stand out to others</strong> and create an impression. And to the most important thing - be remembered!</p>
                         </div>
                     </header>
 
                     <header class="content__header-3">
-                        <h2 class="content__title">DEVELOPMENT</h2>
+                        <h3 class="content__title">DEVELOPMENT</h3>
                         <div class="content__text">
                             <p>Help with a website? Then you’ve come to the right place! Everything from simple web pages to complex portals. <strong>We help you regardless of website.</strong> I develop in Javascript, HTML, CSS and Wordpress</p>
                         </div>
                     </header>
 
                     <header class="content__header-4">
-                        <h2 class="content__title">WORDPRESS</h2>
+                        <h3 class="content__title">WORDPRESS</h3>
                         <div class="content__text">
                             <p>Create fully functional websites, mobile applications and much more. With WordPress, we can use advanced technologies that make this CMS (Content Management System) <strong>work for everything on the web</strong></p>
                         </div>
@@ -92,18 +105,18 @@
         </section>
 
 
-
         <!-- Project -->
-        <section class="project">
+        <section id="projects" class="project">
 
             <!-- <img class="project__background" src="assets/images/image-background.jpg" alt=""> -->
             
             <div class="project__inner">
                 
                 <header class="project__header">
-                    <h2 class="project__title"> < / PROJECT > </h2>
+                    <h2 class="project__title">PROJECTS</h2>
                     <div class="project__text">
-                        <p>A selection of the projects I created in web <strong>development</strong> and made in web <strong>design</strong> down here. Lorem ipsum dolor sit amet</p>
+                        <p>A selection of the projects I created in web <strong>development</strong> and made in web <strong>design</strong> down here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nobis odio amet laboriosam,  modi recusandae et odio aspernatur! Sunt, aliquid eos.</p>
                     </div>
                 </header>
                 
@@ -139,70 +152,72 @@
         </section>
 
 
-
-
         <!-- About -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__inner">
+                <h2 class="about__title">ABOUT</h2>
 
-                <h2 class="about__title"> < / ABOUT > </h2>
                 <article class="about__column">
 
                     <div class="about__about">
 
-                        <h2 class="about__branding"> <strong>HELLO</strong> I'M LINA!</h2>
+                        <h3 class="about__branding"> <strong>HELLO</strong> I'M LINA!</h3>
                         <p>I completely redirected, went from beauty to web development and web design. It makes me grow as a person and I get to do something I really like without it feeling like a job, if you know what I mean. My skills are that I have an eye for details and am responsive to each customer. With me, you get the whole package, from idea to finished page. </p>
-                        <h3 class="about__hope">Hope our paths meet!</h3>
+                        <h4 class="about__hope">Hope our paths meet!</h4>
                         
                         <div class="about__button">
-                            <a href="index.html" class="button">< / CONTACT-ME ></a>
+                            <a href="mailto:lina.berneson@gmail.com" class="button">CONTACT - ME</a>
                         </div>
                         
                     </div>
 
 
-                    
-
-
-
                     <div class="about__educations">
-                        <h2 class="about__branding"> <strong>EDUCATIONS</strong></h2>
-                        <h3 class="about__work">Web design & Web development</h3>
-                        <p class="about__development">Development</p>
+                        <h3 class="about__branding"> <strong>EDUCATIONS</strong></h3>
+                        <h4 class="about__work"> WEB DESIGN & WEB DEVELOPMENT</h4>
+                        <h4 class="about__development">Development</h4>
                         <ul>
                             <li>Front End Development</li>
                             <li>Back End Development</li>
-                            <li>Visual Studio Code (+ Extensions), Local, Filezilla/Transmit, npm, git</li>
+                            <li>Visual Studio Code (+ Extensions), Local</li>
+                            <li>Filezilla/Transmit, npm, git</li>
                         </ul>
     
-                        <p class="about__design">Design</p>
+                        <h4 class="about__design">Design</h4>
                         <ul>
                             <li>Graphic Design</li>
-                            <li>Adobe Photoshop CC™, Adobe XD CC™, Adobe Illustrator CC™</li>
+                            <li>Adobe Photoshop CC™</li>
+                            <li>Adobe XD CC™</li>
+                            <li>Adobe Illustrator CC™</li>
                         </ul>
     
                     </div>
                 </article>
 
-
-
-
             </div>
         </section>
+
 
         <!-- Footer -->
         <footer class="site-footer">
             <div class="site-footer__inner">
 
+                <div class="site-footer__icones">
+
+                    <ul class="icones">
+                        <li class="icones__item"><a href="index.html" class="icones__link"><img src="assets/icons/pinterest-brands.svg" alt="pinterest logo"></a></li>
+                        <li class="icones__item"><a href="https://www.instagram.com/linaberneson/" class="icones__link"><img src="assets/icons/instagram-brands.svg" alt="instagram logo"></a></li>
+                        <li class="icones__item"><a href="https://sv-se.facebook.com/lina.berneson" class="icones__link"><img src="assets/icons/facebook-brands.svg" alt="facebook logo"></a></li>
+                    </ul>
+
+                </div>
+                
+                <h4>Copyright © 2023 Lina Berneson, All rights reserved.</h4>
+                
             </div>
         </footer>
-
-
-
-
-
-
-
+        
+        
 
     </div>
 
