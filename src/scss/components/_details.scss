@@ -1,0 +1,15 @@
+@mixin separator( $align: center) {
+    &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 500px;
+        background-color: var(--color-accent);
+        margin-top: 200px;
+        opacity: 0.5;
+
+        @if $align == center {
+            text-align: center;
+        }
+    }
+}
