@@ -1,76 +1,173 @@
 @use '../../components/buttons' as button;
+@use '../../utilities/responsive';
+@use '../../components/details';
 
 .about {
-
+    display: none;
     background-color: var(--color-dark-200);
     display: grid;
     grid-template-columns: var(--grid-container);
-     padding: 6rem 0;
-    // padding: var(--section-gap) 0;
+    padding: 7rem 0;
+
+    @include responsive.max(36rem) {
+        padding: 6rem 0;
+    }
     
-        &__inner {
+    &__inner {
         grid-column: inner;
-        
-        }
-
-        &__column {
-            display: grid;
-            grid-template-columns: 1fr 1fr; 
-            width: 100%;
-            margin-top: 4rem;
-
-        }
-
-        &__hope {
-            font-family: var(--font-sans);
-            font-size: var(--font-size-2);
-            color: var(--color-accent);
-            font-weight: 500;
-        }
-
-        &__work {
-            font-family: var(--font-sans);
-            font-size: var(--font-size-2);
-            font-weight: 400;
-        }
-
-        &__title {
-            font-size: var(--font-size-4);
+    }
+    
+    &__column {
+        width: 100%;
+        display: grid;;
+        grid-template-columns: 1fr 1fr;
+        margin: 3rem 0 0 0;                       
+        gap: 10rem;
             
+        @include responsive.max(46rem) {
+            display: block;
+            max-width: 500px;
         }
+    }
 
-        &__about {
-            width: 600px;
-        }
-
-        .button {
-
-            margin-top: 3rem;
-            @include button.default;
-        }
-
-        &__educations {
-            // padding: 0 0 0 20px;
-            width: 600px;
-        }
-
-        &__development,
-        &__design {
-            color: var(--color-accent);
-            font-weight: 500;
-        }
+    &__title {
+        font-size: clamp(2rem, 0.0976rem + 7.8049vw, 3rem);
+        margin: 0;
+        color: var(--color-light-200);
+        font-weight: bold;
+        opacity: 0.7;
         
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: inside;
-            font-family: var(--font-sans);
-            font-size: var(--font-size-2);
-            color: var(--color-light);
-            
-            ::marker {
-                color: var(--color-accent-200);
+        animation: fadeIn 3s 0s forwards;
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
             }
         }
 
+        &::before {
+            content: '< / ';
+            color: var(--color-light-200);
+            opacity: 0.7;
+        }
+    
+        &::after {
+            content: ' >';
+            color: var(--color-light-200);
+            opacity: 0.7;
+        }
+    
+        &:hover {
+            opacity: 0.8;
+            transition: all 0.2s;
+        }
+    }
+
+    h3 {
+        font-size: var(--font-size-4);
+
+        strong {
+            font-weight: 800;
+        }
+
+        @include responsive.max(46rem) {
+            font-size: var(--font-size-3);
+        }
+    }
+
+    p {
+        margin: 0 0 3rem 0;
+        max-width: 600px;
+    }
+
+    &__hope {
+        font-size: var(--font-size-3);
+        color: var(--color-accent);
+        font-weight: 400;
+
+        @include responsive.max(25rem) {
+            font-size: var(--font-size-2);
+        }
+    }
+
+    &__work {
+        font-family: var(--font-sans);
+        font-size: var(--font-size-2);
+        margin-bottom: 3rem;
+    }
+
+    &__about {
+        max-width: 600px;
+       
+        @include responsive.max(60rem) {
+            margin-bottom: 6rem;
+        }
+
+        @include responsive.max(25rem) {
+            text-align: right;
+        }
+    }
+
+    // BUTTON
+
+    .button {
+        margin-top: 3rem;
+
+            @include button.default;
+
+            &::before {
+                content: '< / ';
+                color: var(--color-accent);
+                opacity: 0.8;
+                }
+        
+                &::after {
+                    content: ' >';
+                    color: var(--color-accent);
+                    opacity: 0.8;
+                }
+        
+                &:hover {
+                opacity: 0.8;
+                transition: all 0.2s;
+                }
+
+            @include responsive.max(46rem) {
+                margin-top: 10px;
+        }
+    }
+
+    // EDUCATIONS
+
+    &__educations {
+        max-width: 800px;  
+        margin: 0 0 3rem 0;
+    }
+
+    &__development,
+    &__design {
+        margin-bottom: 1rem;
+        color: var(--color-accent);
+        font-weight: 500;
+        font-size: var(--font-size-3);
+
+        @include responsive.max(25rem) {
+            font-size: var(--font-size-2);
+        }
+    }
+        
+    ul {
+        margin: 0;
+        list-style: inside;
+        font-family: var(--font-sans);
+        font-size: var(--font-size-2);
+        color: var(--color-light);
+            
+        ::marker {
+            color: var(--color-accent-200);
+        }
+    }
 }
