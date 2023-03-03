@@ -1,0 +1,29 @@
+.site-footer {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-dark);
+    
+    h4 {
+        display: flex;
+        justify-content: center;
+        color: #555; 
+        font-weight: 200;
+    }
+}
+
+.icones {
+    gap: var(--gap-m);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--gap-l);
+    
+    &__link {
+        margin-top: var(--gap-xl);
+        display: flex;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+    
