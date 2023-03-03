@@ -1,43 +1,113 @@
+@use '../../components/details'; 
+@use '../../utilities/responsive';
+
 .hero {
     display: grid;
     min-height: 100vh;
     background: #111 url(assets/images/picturelinab@2x.png) no-repeat;
-    background-position: right;
+    background-size: contain;
+    background-position: right 100px;
     grid-template-columns: var(--grid-container);
     
+    @include responsive.max(42rem) {
+        background-size: cover;
+       }
+
     &__inner {
     grid-column: inner;
         
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     &__content {
-    max-width: 50rem;
-    width: 100%;
-    margin: 18rem 15rem;
+        display: flex;
+        justify-content: center;
+
+        @include responsive.max(43rem) {
+            margin-top: 300px;
+        }
     }
 
     &__branding-firstname {
-        font-size: 200px;
-        color: var(--color-light-200);
-        margin: 0;
+        display: block;
         text-align: end;
+        margin: 0;
+        font-size: clamp(5rem, -2.1341rem + 29.2683vw, 12.5rem);
+        color: var(--color-light-200);
+
+        @include responsive.max(43rem) {
+            text-align: left;
+            margin-bottom: 10px;
+        }
     }
 
     &__branding-lastname {
+        display: block;
         margin: 0;
-        line-height: 0.5;
+        line-height: 0.2;
         font-weight: 200;
-        font-size: 150px;
+        font-size: clamp(3.75rem, 1.372rem + 9.7561vw, 6.25rem);
         color: var(--color-light-200);
+
+        @include responsive.max(43rem) {
+            text-align: left;
+        }
     }
 
+    &__branding-firstname,
+    &__branding-lastname {
+        
+        animation: fadeIn 3s 0s forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0.7;
+        }
+    }
+    
     h2 {
-        margin-top: 50px;
-        text-align: end;
-        font-size: 40px;
+        display: block;
+        text-align: right;
+        margin-top: 4rem;
+        font-size: var(--font-size-4);
         font-weight: 200;
+        color: var(--color-accent);
+        white-space: nowrap;
+        font-family: var(--font-sans-title);
+
+        &::before {
+            content: '< / ';
+            color: var(--color-accent);
+            opacity: 0.8;
+            }
+    
+            &::after {
+                content: ' >';
+                color: var(--color-accent);
+                opacity: 0.8;
+            }
+        
+        strong {
+            font-weight: 600;
+        }
+
+        @include responsive.max(43rem) {
+            text-align: left;
+        }
+
+        @include responsive.max(66rem) {
+            font-size: var(--font-size-3);
+        }
+        
+        @include responsive.max(36rem) {
+            margin-top: 3rem;
+            font-size: var(--font-size-2);
+        }
     }
 }
